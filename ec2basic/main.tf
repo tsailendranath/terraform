@@ -19,5 +19,5 @@ resource "aws_instance" "javaserverec2" {
   instance_type = "t2.micro"
   ami = "ami-024c319d5d14b463e"
   key_name = aws_key_pair.terraformkp.key_name
-  associate_public_ip_address = true
+  associate_public_ip_address = false
 }
